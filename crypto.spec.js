@@ -1,5 +1,5 @@
 
-const expect = require('chai').expect
+const { expect } = require('chai')
 
 describe("the Ceaser's cypher", () => {
 
@@ -39,18 +39,18 @@ describe("the Ceaser's cypher", () => {
 
 function encrypt(message="", shift=0) {
 
-    let a_code = "a".charCodeAt(0)
-    let A_code = "A".charCodeAt(0)
-    let Z_code = "Z".charCodeAt(0)
-    let z_code = "z".charCodeAt(0)
+    const a_code = "a".charCodeAt(0)
+    const A_code = "A".charCodeAt(0)
+    const Z_code = "Z".charCodeAt(0)
+    const z_code = "z".charCodeAt(0)
 
     shift = shift % 26
 
     let result = ""
     for (let i = 0; i < message.length; i++) {
 
-        let char = message.charAt(i)
-        let charCode = message.charCodeAt(i)
+        const char = message.charAt(i)
+        const charCode = message.charCodeAt(i)
 
         let offBy = 0
         if (isUpper(char)) {

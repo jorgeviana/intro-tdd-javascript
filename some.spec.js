@@ -1,6 +1,5 @@
-//import { expect } from 'chai';
-
-var expect = require('chai').expect
+//import { expect } from 'chai'
+const { expect } = require('chai')
 
 describe('the environment', () => {
   it('works, hopefully', () => {
